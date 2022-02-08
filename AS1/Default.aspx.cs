@@ -12,6 +12,7 @@ namespace AS1
         protected void Page_Load(object sender, EventArgs e)
         {
             btnGreen.Click += new EventHandler(this.btnGreenClick);
+            btnReversed.Click += new EventHandler(this.btnReversedClick);
         }
         
         void btnGreenClick(Object sender, EventArgs e)
@@ -19,8 +20,23 @@ namespace AS1
             string input = txtGreen.Text;
 
             lblGreen.Text = input;
+        }
+
+        void btnReversedClick(Object sender, EventArgs e)
+        {
+            char[] input = txtReverse.Text.ToCharArray();
+            string reversed = "";
+
+            for (int i = input.Length; i > 0; i--)
+            {
+                reversed += input[i-1];
+            }
+            
+           
 
 
+
+            lblReversed.Text = reversed;
         }
     }
 }
