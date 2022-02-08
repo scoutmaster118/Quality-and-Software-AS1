@@ -13,8 +13,16 @@ namespace AS1
         {
             btnGreen.Click += new EventHandler(this.btnGreenClick);
             btnReversed.Click += new EventHandler(this.btnReversedClick);
+            btnBold.Click += new EventHandler(this.btnBoldClick);
         }
-        
+
+        private void btnBoldClick(object sender, EventArgs e)
+        {
+            string input = txtBold.Text;
+
+            lblBold.Text = input;
+        }
+
         void btnGreenClick(Object sender, EventArgs e)
         {
             string input = txtGreen.Text;

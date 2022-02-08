@@ -37,7 +37,7 @@
      <section>
          <h2> Enter text to bold it:</h2>
         <div>
-        <asp:TextBox ID="tbBold" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtBold" runat="server"></asp:TextBox>
         <asp:Button ID="btnBold" runat="server" Text="Button" Width="178px" /> 
         
         <br />

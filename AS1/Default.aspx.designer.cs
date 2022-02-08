@@ -69,13 +69,13 @@ namespace AS1
         protected global::System.Web.UI.WebControls.Label lblReversed;
 
         /// <summary>
-        /// tbBold control.
+        /// txtBold control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbBold;
+        protected global::System.Web.UI.WebControls.TextBox txtBold;
 
         /// <summary>
         /// btnBold control.
