@@ -48,5 +48,19 @@
        </div>
     </section>
 
+    <section>
+         <h2> Enter text to italicize it:</h2>
+        <div>
+        <asp:TextBox ID="txtItal" runat="server"></asp:TextBox>
+        <asp:Button ID="btnItal" runat="server" Text="Button" Width="178px" /> 
+        
+        <br />
+            
+            Your text, but italicized:<p>
+            <asp:Label ID="lblItal" runat="server" Text="" CssClass="textitali"></asp:Label>
+        </p>
+       </div>
+    </section>
+
 
         </asp:Content>

@@ -10,6 +10,9 @@ body {
 .textbold {
     font-weight:bold;
 }
+.textitali {
+    font-style: italic;
+}
 section{
     margin: 50px;
     

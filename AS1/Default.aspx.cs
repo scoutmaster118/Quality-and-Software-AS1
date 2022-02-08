@@ -14,6 +14,14 @@ namespace AS1
             btnGreen.Click += new EventHandler(this.btnGreenClick);
             btnReversed.Click += new EventHandler(this.btnReversedClick);
             btnBold.Click += new EventHandler(this.btnBoldClick);
+            btnItal.Click += new EventHandler(this.btnItalClick);
+        }
+
+        private void btnItalClick(object sender, EventArgs e)
+        {
+            string input = txtItal.Text;
+
+            lblItal.Text = input;
         }
 
         private void btnBoldClick(object sender, EventArgs e)
@@ -32,13 +40,20 @@ namespace AS1
 
         void btnReversedClick(Object sender, EventArgs e)
         {
-            char[] input = txtReverse.Text.ToCharArray();
+            string[] input = txtReverse.Text.Split(' ');
             string reversed = "";
 
-            for (int i = input.Length; i > 0; i--)
+            foreach (var word in input)
             {
-                reversed += input[i-1];
+                string temp = "";
+                for (int i = word.Length; i > 0; i--)
+                {
+                    temp += word[i - 1];
+                }
+                reversed += temp;
             }
+            
+
             lblReversed.Text = reversed;
         }
     }
