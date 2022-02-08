@@ -31,11 +31,6 @@ namespace AS1
             {
                 reversed += input[i-1];
             }
-            
-           
-
-
-
             lblReversed.Text = reversed;
         }
     }

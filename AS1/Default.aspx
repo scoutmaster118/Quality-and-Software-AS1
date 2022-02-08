@@ -13,9 +13,10 @@
         <asp:Button ID="btnGreen" runat="server" Text="Submit" Width="178px" /> 
         
         <br />
-            Your text, but green:<p id="GreenFormat output">
+            Your text, but green:
+            <p id="GreenFormat output">
             <asp:Label ID="lblGreen" runat="server" Text="" CssClass="GreenText"></asp:Label>
-        </p>
+            </p>
        </div>
     </section>
     
@@ -27,11 +28,25 @@
         
         <br />
             Your text, but Reversed:
+            <p>
             <asp:Label ID="lblReversed" runat="server" Text=""></asp:Label>
-        
+        </p>
        </div>
     </section>
 
+     <section>
+         <h2> Enter text to bold it:</h2>
+        <div>
+        <asp:TextBox ID="tbBold" runat="server"></asp:TextBox>
+        <asp:Button ID="btnBold" runat="server" Text="Button" Width="178px" /> 
+        
+        <br />
+            
+            Your text, but Bold:<p>
+            <asp:Label ID="lblBold" runat="server" Text="" CssClass="textbold"></asp:Label>
+        </p>
+       </div>
+    </section>
 
 
         </asp:Content>
