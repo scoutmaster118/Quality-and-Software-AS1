@@ -15,13 +15,13 @@ namespace AS1
     {
 
         /// <summary>
-        /// txtGreen control.
+        /// btnTexSubmit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtGreen;
+        protected global::System.Web.UI.WebControls.Button btnTexSubmit;
 
         /// <summary>
         /// btnGreen control.
@@ -33,24 +33,6 @@ namespace AS1
         protected global::System.Web.UI.WebControls.Button btnGreen;
 
         /// <summary>
-        /// lblGreen control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblGreen;
-
-        /// <summary>
-        /// txtReverse control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtReverse;
-
-        /// <summary>
         /// btnReversed control.
         /// </summary>
         /// <remarks>
@@ -58,24 +40,6 @@ namespace AS1
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnReversed;
-
-        /// <summary>
-        /// lblReversed control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblReversed;
-
-        /// <summary>
-        /// txtBold control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtBold;
 
         /// <summary>
         /// btnBold control.
@@ -87,24 +51,6 @@ namespace AS1
         protected global::System.Web.UI.WebControls.Button btnBold;
 
         /// <summary>
-        /// lblBold control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblBold;
-
-        /// <summary>
-        /// txtItal control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtItal;
-
-        /// <summary>
         /// btnItal control.
         /// </summary>
         /// <remarks>
@@ -114,12 +60,30 @@ namespace AS1
         protected global::System.Web.UI.WebControls.Button btnItal;
 
         /// <summary>
-        /// lblItal control.
+        /// txtInput control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblItal;
+        protected global::System.Web.UI.WebControls.TextBox txtInput;
+
+        /// <summary>
+        /// lblsubmit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblsubmit;
+
+        /// <summary>
+        /// txtOutput control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtOutput;
     }
 }

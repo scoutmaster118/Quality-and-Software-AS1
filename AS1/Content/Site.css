@@ -6,6 +6,7 @@ body {
 
 .GreenText {
     color: green;
+
 }
 .textbold {
     font-weight:bold;
@@ -13,9 +14,22 @@ body {
 .textitali {
     font-style: italic;
 }
+
 section{
     margin: 50px;
     
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 
@@ -31,8 +45,7 @@ input,
 select,
 textarea {
     max-width: 280px;
-    width: 350px;
-}
+    }
 
 
 /* Responsive: Portrait tablets and up */

@@ -6,61 +6,36 @@
         <h1>Assignment 1 </h1>
     </div>
 
-    <section>
-        <h2> Enter text to turn it green:</h2>
-        <div>
-        <asp:TextBox ID="txtGreen" runat="server"></asp:TextBox>
-        <asp:Button ID="btnGreen" runat="server" Text="Turn text green" Width="178px" /> 
-        
-        <br />
-            Your text, but green:
-            <p id="GreenFormat output">
-            <asp:Label ID="lblGreen" runat="server" Text="" CssClass="GreenText"></asp:Label>
-            </p>
-       </div>
-    </section>
-    
-    <section>
-         <h2> Enter text to reverse it:</h2>
-        <div>
-        <asp:TextBox ID="txtReverse" runat="server"></asp:TextBox>
-        <asp:Button ID="btnReversed" runat="server" Text="Reverse all words" Width="178px" /> 
-        
-        <br />
-            Your text, but Reversed:
-            <p>
-            <asp:Label ID="lblReversed" runat="server" Text=""></asp:Label>
-        </p>
-       </div>
-    </section>
 
-     <section>
-         <h2> Enter text to bold it:</h2>
-        <div>
-        <asp:TextBox ID="txtBold" runat="server"></asp:TextBox>
-        <asp:Button ID="btnBold" runat="server" Text="Convert to Bold" Width="178px" /> 
-        
-        <br />
+    <div class="row">
+        <div class="column">
+            <asp:Button ID="btnTexSubmit" runat="server" Text="Submit Text" Width="178px" class="btn btn-primary" />
+        </div>
+        <div class="column">
+            <asp:Button ID="btnGreen" runat="server" Text="Green Text" class="btn btn-success" Width="150" />
+            <asp:Button ID="btnReversed" runat="server" Text="Reverse words" class="btn btn-danger" Width="150" />
+            <asp:Button ID="btnBold" runat="server" Text="Bold" class="btn btn-info" Width="60" />
+            <asp:Button ID="btnItal" runat="server" Text="Italicize" class="btn btn-warning" Width="150" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <asp:TextBox ID="txtInput" runat="server" Height="119px" Width="595px" placeholder="Input your text here"></asp:TextBox>
+            <asp:Label ID="lblsubmit" runat="server"></asp:Label>
+        </div>
+        <div class="column">
+            <asp:TextBox ID="txtOutput" runat="server" Height="119px" Width="595px" placeholder="output text"></asp:TextBox>
             
-            Your text, but Bold:<p>
-            <asp:Label ID="lblBold" runat="server" Text="" CssClass="textbold"></asp:Label>
-        </p>
-       </div>
-    </section>
 
-    <section>
-         <h2> Enter text to italicize it:</h2>
-        <div>
-        <asp:TextBox ID="txtItal" runat="server"></asp:TextBox>
-        <asp:Button ID="btnItal" runat="server" Text="Convert to Italics" Width="178px" /> 
-        
-        <br />
-            
-            Your text, but italicized:<p>
-            <asp:Label ID="lblItal" runat="server" Text="" CssClass="textitali"></asp:Label>
-        </p>
-       </div>
-    </section>
+        </div>
+    </div>
 
 
-        </asp:Content>
+
+
+
+
+
+
+
+</asp:Content>

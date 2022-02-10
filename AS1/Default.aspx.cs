@@ -15,33 +15,56 @@ namespace AS1
             btnReversed.Click += new EventHandler(this.btnReversedClick);
             btnBold.Click += new EventHandler(this.btnBoldClick);
             btnItal.Click += new EventHandler(this.btnItalClick);
+            btnTexSubmit.Click += new EventHandler(this.btnSubmitClick);
+        }
+
+        public string getInput()
+        {
+            return txtInput.Text;
+        }
+
+        public void btnSubmitClick(object sender, EventArgs e)
+        {
+            string input = getInput();
+            
+            txtOutput.CssClass = "";
+
+            if (string.IsNullOrEmpty(input))
+            {
+                lblsubmit.Text = "your input is blank";
+            }
+            else
+            {
+                lblsubmit.Text = "you submitted the text: " + input;
+            }
+            
         }
 
         private void btnItalClick(object sender, EventArgs e)
         {
-            string input = txtItal.Text;
+            txtOutput.CssClass = "textitali";
 
-            lblItal.Text = input;
+            txtOutput.Text = getInput();
         }
 
         private void btnBoldClick(object sender, EventArgs e)
         {
-            string input = txtBold.Text;
 
-            lblBold.Text = input;
+            txtOutput.CssClass = "textbold";
+            txtOutput.Text = getInput();
         }
 
         void btnGreenClick(Object sender, EventArgs e)
         {
-            string input = txtGreen.Text;
-
-            lblGreen.Text = input;
+            txtOutput.CssClass = "GreenText";
+            txtOutput.Text = getInput();
         }
 
         void btnReversedClick(Object sender, EventArgs e)
         {
-            string[] input = txtReverse.Text.Split(' ');
+            string[] input = getInput().Split(' ');
             string reversed = "";
+            txtOutput.CssClass = "";
 
             foreach (var word in input)
             {
@@ -52,9 +75,9 @@ namespace AS1
                 }
                 reversed += temp;
             }
-            
+            txtOutput.Text = reversed;
 
-            lblReversed.Text = reversed;
+            //lblReversed.Text = reversed;
         }
     }
 }
