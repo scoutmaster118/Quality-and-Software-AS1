@@ -11,7 +11,7 @@ namespace AS1
 {
 
 
-    public partial class _Default
+    public partial class MainPage
     {
 
         /// <summary>
@@ -24,40 +24,22 @@ namespace AS1
         protected global::System.Web.UI.WebControls.Button btnTexSubmit;
 
         /// <summary>
-        /// btnGreen control.
+        /// btnB2D control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnGreen;
+        protected global::System.Web.UI.WebControls.Button btnB2D;
 
         /// <summary>
-        /// btnReversed control.
+        /// btnD2B control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnReversed;
-
-        /// <summary>
-        /// btnBold control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnBold;
-
-        /// <summary>
-        /// btnItal control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnItal;
+        protected global::System.Web.UI.WebControls.Button btnD2B;
 
         /// <summary>
         /// txtInput control.

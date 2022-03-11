@@ -73,7 +73,7 @@ namespace AS1
                 {
                     temp += word[i - 1];
                 }
-                reversed += temp;
+                reversed +=" " + temp;
             }
             txtOutput.Text = reversed;
 
