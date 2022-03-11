@@ -16,21 +16,21 @@
 
     <div class="row">
         <div class="column">
-            <asp:Button ID="btnTexSubmit" runat="server" Text="Submit Text" Width="178px" class="btn btn-primary" />
+            <asp:Button ID="btnNumSubmit" runat="server" Text="Submit Number" Width="178px" class="btn btn-primary" />
         </div>
         <div class="column">
-            <asp:Button ID="btnB2D" runat="server" Text="B2D" class="btn btn-primary" Width="150" />
-            <asp:Button ID="btnD2B" runat="server" Text="D2B" class="btn btn-primary" Width="150" />
+            <asp:Button ID="btnB2D" runat="server" Text="B2D" class="btn btn-primary" Width="150" Enabled="false"/>
+            <asp:Button ID="btnD2B" runat="server" Text="D2B" class="btn btn-primary" Width="150" Enabled="false" />
             
         </div>
     </div>
     <div class="row">
         <div class="column">
-            <asp:TextBox ID="txtInput" runat="server" Height="119px" Width="595px" placeholder="Input your text here"></asp:TextBox>
+            <asp:TextBox ID="txtInput" runat="server" Height="119px" Width="595px" placeholder="Input your number here"></asp:TextBox>
             
         </div>
         <div class="column">
-            <asp:TextBox ID="txtOutput" runat="server" Height="119px" Width="595px" placeholder="output text"></asp:TextBox>
+            <asp:TextBox ID="txtOutput" runat="server" Height="119px" Width="595px" placeholder="output number"></asp:TextBox>
             
         </div>
     </div>

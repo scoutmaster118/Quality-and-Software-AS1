@@ -13,19 +13,38 @@ namespace AS1
         {
             btnB2D.Click += new EventHandler(this.btnB2DClick);
             btnD2B.Click += new EventHandler(this.btnD2BClick);
-            btnTexSubmit.Click += new EventHandler(this.btnSubmitClick);
+            btnNumSubmit.Click += new EventHandler(this.btnSubmitClick);
         }
 
-        decimal userInput = 0;
+        private void DisableButtons()
+        {
+            btnB2D.Enabled = false;
+            btnD2B.Enabled = false;
+        }
+        
 
         private void btnB2DClick(object sender, EventArgs e)
         {
-            
+            int binaryNumber = Convert.ToInt32(getInput(),2);
+            txtOutput.Text = binaryNumber.ToString(); ;
+            DisableButtons();
         }
 
         private void btnD2BClick(object sender, EventArgs e)
         {
-            
+           
+            string result;
+            int num = Convert.ToInt32(getInput());
+            result = "";
+            while (num > 1)
+            {
+                int remainder = num % 2;
+                result = Convert.ToString(remainder) + result;
+                num /= 2;
+            }
+            result = Convert.ToString(num) + result;
+            txtOutput.Text = result;
+            DisableButtons();
         }
 
         public string getInput()
@@ -35,7 +54,8 @@ namespace AS1
 
         private void btnSubmitClick(object sender, EventArgs e)
         {
-            decimal input = 0;
+            txtOutput.Text = "";
+            int input = 0;
             bool error = false;
             try
             {
@@ -50,7 +70,13 @@ namespace AS1
             {
                 txtOutput.CssClass = "";
                 lblsubmit.Text = "you submitted the number: " + input;
-                this.userInput = input;
+                btnB2D.Enabled = true;
+                btnD2B.Enabled = true;
+
+            }
+            else
+            {
+                DisableButtons();
             }
             
 
